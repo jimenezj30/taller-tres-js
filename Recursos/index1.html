@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de trim()</title>
+</head>
+<body>
+    <h1>Resultados de uso de trim()</h1>
+
+    <script>
+        // Usa trim() en un string simple
+        let saludar = "     Hola, Que tal?    ";
+        document.write(saludar.trim() + "</p>");
+
+        // Uso de trim() con concatenación de strings
+        let nombre = " Andres ";
+        let apellido = " Campo ";
+        let saluda = "Hola, " + nombre.trim() + " " + apellido.trim();
+        document.write(saluda + "</p>");
+
+        // Uso de trim() dentro de una función
+        function saludas(n) {
+            return "Hola, " + n.trim();
+        }
+        document.write(saludas("  Juan   ") + "</p>");
+
+        // Uso de trim() para verificar entrada de usuario
+        let Usuario = "  Juan    ";
+        let limpio = Usuario.trim();
+        document.write(`<p>Bienvenido, ${limpio}</p>`);
+    </script>
+</body>
+</html>

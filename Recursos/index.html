@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Concatenacion en JavaScript</title>
+</head>
+<body>
+
+    <h1>Ejemplo de Concatenacion en JavaScript</h1>
+
+    <div id="concatResultado"></div>
+    <div id="concatTresResultado"></div>
+    <div id="plustResultado"></div>
+
+    <script>
+        // Concatenación usando  string concat()
+        const string1 = "Hola, ";
+        const string2 = "estudiantes!";
+        const resultado = string1.concat(string2);
+
+        console.log(resultado); // Salida: "Hola, mundo!"
+        document.getElementById('concatResultado').textContent = `Usando string concat():    ${resultado}`;
+
+        // Concatenación con tres cadenas usando  string concat()
+        const string6 = "popayan ";
+        const string7 = "es ";
+        const string8 = "genial!";
+        const resultadoConcat = string6.concat(string7, string8);
+
+        console.log(resultadoConcat); // Salida: "popayan es genial!"
+        document.getElementById('concatTresResultado').textContent = `Usando string concat() con tres cadenas:    ${resultadoConcat}`;
+
+        // Concatenación con el comando o usando el operador '+'
+        const resultadoPlus = string6 + string7   + string8;
+        console.log(resultadoPlus); // Salida: "popayan es genial!"
+        document.getElementById('plustResultado').textContent = `Usando '+' con tes cadenas: ${resultadoPlus}`;
+    </script>
+
+</body>
+</html>
+
